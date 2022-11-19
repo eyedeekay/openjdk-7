@@ -1,0 +1,2 @@
+# no separate directory for image files
+openjdk-7-jre-lib binary: image-file-in-usr-lib

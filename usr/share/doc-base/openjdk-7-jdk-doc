@@ -1,0 +1,11 @@
+Document: openjdk-7-jdk-doc
+Title: OpenJDK Java(TM) 7 JDK, Standard Edition Documentation
+Author: OpenJDK
+Abstract: The Java 7 Platform Documentation contains API specifications,
+ feature descriptions, developer guides, reference pages for JDK tools
+ and utilities, demos, and links to related information.
+Section: Programming
+
+Format: HTML
+Index: /usr/share/doc/openjdk-7-jre-headless/api/index.html
+Files: /usr/share/doc/openjdk-7-jre-headless/api/*/*.html
