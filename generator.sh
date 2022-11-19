@@ -1,7 +1,6 @@
 #! /usr/bin/env sh
 git init
 find . -not -path "./.git/*" -size +100M > .gitignore
-echo '*.deb' >> .gitignore
 git remote add origin git@github.com:eyedeekay/openjdk-7
 git add .gitignore
 sed -i 's|\./||g' .gitignore
