@@ -1,0 +1,149 @@
+<html>
+  <head>
+    <title>
+      openjdk-7
+    </title>
+    <meta name="author" content="eyedeekay" />
+    <meta name="description" content="openjdk-7" />
+    <meta name="keywords" content="trunk" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="showhider.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <a href="#shownav">
+        Show navigation
+      </a>
+      <div id="shownav">
+        <div id="hidenav">
+          <ul>
+            <li>
+              <a href="..">
+                Up one level ^
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+                index
+              </a>
+            </li>
+            <li>
+              <a href="INFO.html">
+                INFO
+              </a>
+            </li>
+            <li>
+              <a href="etc/index.html">
+                etc/index.html
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+                index.html
+              </a>
+            </li>
+          </ul>
+          <br>
+          <a href="#hidenav">
+            Hide Navigation
+          </a>
+        </div>
+      </div>
+    </div>
+    <a id="returnhome" href="/">
+      /
+    </a>
+    <h1>
+      What is this?
+    </h1>
+    <p>
+      This is a an archive containing the last
+      <code>
+        openjdk-7-*
+      </code>
+      packages published by Debian
+      during Debian Jessie, unpacked to the root of this repository. If you don&rsquo;t know why
+      you need this, you probably don&rsquo;t need it, but if you do know why you need this then
+      the reason I did it this way is so that we can:
+    </p>
+    <ol>
+      <li>
+        Always have a backup.
+      </li>
+      <li>
+        Which is signed by GPG at the time it was checked in.
+      </li>
+      <li>
+        Which has a record of the hash of every single file at the time it was checked in.
+      </li>
+      <li>
+        Which otherwise leaves the archive packages untouched(with the expired signatures intact)
+      </li>
+    </ol>
+    <p>
+      Before I checked these in and generated the hashes, I made sure to find an HTTPS mirror of
+      the Debian Archive with a valid certificate, and then took care to make sure that the only
+      thing wrong with the signature on the package files is merely expired due to the expiration
+      of the Debian Jessie signing keys. Therefore, the packages can be considered to be authentic.
+    </p>
+    <p>
+      As a further measure, I generated the archive twice, using different archive sources. I then
+      compared the hashes of the 2 downloads, which were identical, unpacked them, diffed the 2
+      resulting directories, which were also identical.
+    </p>
+    <h2>
+      Why?
+    </h2>
+    <p>
+      Because sometimes, you need a Java 7
+      <code>
+        -bootclasspath
+      </code>
+      and you don&rsquo;t have a good way to get
+      a good one. For instance, if you use certain interface features of Java 8 that are not in
+      Java 7, then when you run your Android application it will crash completely in places that
+      don&rsquo;t make sense anywhere else.
+    </p>
+    <ul>
+      <li>
+        <a href="https://gist.github.com/AlainODea/1375759b8720a3f9f094">
+          AlainODea Example
+        </a>
+      </li>
+      <li>
+        <a href="http://zzz.i2p/topics/1668">
+          The I2P for Android example
+        </a>
+        <code>
+          # ignored files due to sizze limit
+          ./openjdk-7-dbg_7u181-2.6.14-1~deb8u1_amd64.deb
+          ./usr/lib/debug/.build-id/78/b2fc51ee18285354ad0f4e36ddc1361bddc274.debug
+          *.deb
+        </code>
+      </li>
+    </ul>
+    <div id="sourcecode">
+      <span id="sourcehead">
+        <strong>
+          Get the source code:
+        </strong>
+      </span>
+      <ul>
+        <li>
+          <a href="https://github.com/eyedeekay/openjdk-7">
+            Source Repository: (https://github.com/eyedeekay/openjdk-7)
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <iframe src="https://snowflake.torproject.org/embed.html" width="320" height="240" frameborder="0" scrolling="no"></iframe>
+    </div>
+    <div>
+      <a href="https://geti2p.net/">
+        <img src="i2plogo.png"></img>
+        I2P
+      </a>
+    </div>
+  </body>
+</html>
